@@ -1,0 +1,10 @@
+{
+  "name": "ditto-sandbox",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "ms": "^2.1.3"
+  }
+}
