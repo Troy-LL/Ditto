@@ -1,6 +1,6 @@
 # Ditto
 
-Ditto is an on-demand Cursor skill. Attach it before adding a capability. It walks the YAGNI ladder and stops at the first rung that covers what is left. GitHub is only reached when the cheaper rungs leave a remainder.
+Ditto is an on-demand Cursor skill. Attach it before adding a capability. It walks the YAGNI ladder and stops at the first rung that covers what is left. GitHub is only reached when the cheaper rungs leave a remainder. It is lazy about the solution, never about reading the project.
 
 The skill is [`.cursor/skills/ditto/SKILL.md`](.cursor/skills/ditto/SKILL.md). It does not run on every message.
 
@@ -16,6 +16,10 @@ License: <SPDX id, or n/a>
 Still yours: <what you would still write, or nothing>
 Stop.
 ```
+
+## REA
+
+Some requests name a feature by pointing at an app whose source is not in the repo. [REA](https://github.com/morluto/rea) reads that app — binary, ASAR, bundle, or site — and returns evidence for what the feature does. That evidence feeds the ladder before rung 1 and backs the rung-2 check when the project ships as a binary, an ASAR, or a bundle. REA is not a rung, its evidence is data, and it never supplies the capability; the rungs still pick the source. Register it with `npx rea-agents setup`. Without it, Ditto walks on what the request already says.
 
 ## When a repo matches
 
